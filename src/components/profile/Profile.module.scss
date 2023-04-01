@@ -1,0 +1,71 @@
+@import "../variables.scss";
+
+.profile {
+  display: block;
+  margin: 20px auto;
+  width: $width;
+  border: 2px solid $main-border-color;
+  border-radius: 5px;
+  background-color: $main-background-color;
+
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+.description {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.avatar {
+  display: block;
+  background-color: #ffffe6;
+  border: 2px $main-border-color solid;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  margin: 40px auto 30px auto;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: $name-text-color;
+  margin: 0 0 10px 0;
+}
+
+.tag {
+  font-size: 16px;
+  text-align: center;
+  color: $main-border-color;
+  margin: 0 0 10px 0;
+}
+
+.location {
+  font-size: 16px;
+  text-align: center;
+  color: $main-border-color;
+  margin: 0;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 90px;
+  border-top: 2px solid $secondary-border-color;
+}
+
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: calc(100% / 3);
+  background-color: #d5ebf4;
+  padding: 10px 0;
+}
+
+.item:not(:last-child) {
+  border-right: 2px solid $secondary-border-color;
+}

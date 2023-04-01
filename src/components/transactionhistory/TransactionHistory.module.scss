@@ -1,0 +1,27 @@
+@import "../variables.scss";
+
+.transactionHistory {
+  margin: 0 auto;
+  width: $width;
+  border: 2px solid $main-border-color;
+  border-radius: 5px;
+
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+.tableHeader {
+  text-transform: uppercase;
+  width: calc(100% / 3);
+  text-align: center;
+  background-color: $transaction-hystory-head-table-background;
+}
+
+.tableRow {
+  background-color: $main-background-color;
+}
+
+.tableRow:nth-of-type(2n + 1) {
+  background-color: $statistics-text-color;
+}

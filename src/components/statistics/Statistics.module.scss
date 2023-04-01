@@ -1,0 +1,38 @@
+@import "../variables.scss";
+
+.statistics {
+  text-align: center;
+  border: 2px solid $main-border-color;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+  width: $width;
+
+  background-color: $main-background-color;
+
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+.title {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: $main-border-color;
+  text-transform: uppercase;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  color: $statistics-text-color;
+}

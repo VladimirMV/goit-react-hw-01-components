@@ -1,0 +1,27 @@
+@import "../variables.scss";
+
+.friendList {
+  display: block;
+  margin: 20px auto 0 auto;
+  width: $width;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: $main-background-color;
+  border: 2px $friend-list-item-border-color solid;
+  border-radius: $border-radius;
+  padding: 10px 0;
+
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 15px;
+}

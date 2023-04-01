@@ -1,0 +1,14 @@
+@import "../variables.scss";
+
+.label {
+  display: block;
+  color: $main-border-color;
+  padding: 10px 10px 0 10px;
+}
+
+.quantity {
+  font-weight: 700;
+  display: block;
+  color: $name-text-color;
+  padding: 0 10px 10px;
+}

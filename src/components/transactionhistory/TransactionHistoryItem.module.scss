@@ -1,0 +1,12 @@
+@import "../variables.scss";
+
+.typeCell,
+.cell {
+  width: calc(100% / 3);
+  text-align: center;
+  padding: 5px 0;
+}
+
+.typeCell {
+  text-transform: capitalize;
+}
