@@ -1,6 +1,6 @@
 $app-background-color: #b4ffc6;
-$user-is-online-color: #29c455;
-$user-is-offline-color: #e83d3d;
+$user-is-online-color: #07c63d;
+$user-is-offline-color: #ee0b0b;
 
 $main-background-color: #ece8ff;
 $main-border-color: #797979;
@@ -10,8 +10,10 @@ $friend-list-item-border-color: #c2c2c2;
 $name-text-color: #000000;
 $statistics-text-color: #ffffff;
 $transaction-hystory-head-table-background: #9cd9d3;
-
-$shadow: 13px 5px 10px 3px rgba(75, 75, 75, 0.3);
+$shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    
 $border-radius: 5px;
 
 $width: 320px;
