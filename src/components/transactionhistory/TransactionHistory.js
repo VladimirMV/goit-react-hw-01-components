@@ -1,6 +1,6 @@
-import PropTypes from "prop-types";
-import styles from "./TransactionHistory.module.scss";
-import TransactionHistoryItem from "./TransactionHistoryItem";
+import PropTypes from 'prop-types';
+import styles from './TransactionHistory.module.scss';
+import TransactionHistoryItem from './TransactionHistoryItem';
 
 export default function TransactionHistory({ transactions = [] }) {
   return (
@@ -10,17 +10,16 @@ export default function TransactionHistory({ transactions = [] }) {
           <th className={styles.tableHeader}>Type</th>
           <th className={styles.tableHeader}>Amount</th>
           <th className={styles.tableHeader}>Currency</th>
-            </tr>
+        </tr>
       </thead>
       <tbody>
         {transactions.map(({ id, type, amount, currency }) => (
-          <tr key={id} className={styles.tableRow}>
-            <TransactionHistoryItem
-              transactionType={type}
-              transactionAmount={amount}
-              transactionCurrency={currency}
-            />
-          </tr>
+          <TransactionHistoryItem
+            transactionType={type}
+            transactionAmount={amount}
+            transactionCurrency={currency}
+            id={id}
+          />
         ))}
       </tbody>
     </table>

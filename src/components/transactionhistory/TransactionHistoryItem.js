@@ -6,13 +6,14 @@ export default function TransactionHistoryItem({
   transactionType,
   transactionAmount,
   transactionCurrency,
+  id,
 }) {
   return (
-    <>
+    <tr key={id} className={styles.tableRow}>
       <td className={styles.typeCell}>{transactionType}</td>
       <td className={styles.cell}>{transactionAmount}</td>
       <td className={styles.cell}>{transactionCurrency}</td>
-    </>
+    </tr>
   );
 }
 

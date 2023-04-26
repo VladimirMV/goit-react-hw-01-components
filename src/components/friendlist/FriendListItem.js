@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
 import styles from './FriendListItem.module.scss';
 
-function FriendListItem({ status, name, avatar }) {
+function FriendListItem({ status, name, avatar, id }) {
+  console.log('FriendListItem', status, name, avatar, id);
   return (
-    <>
+    <li className={styles.item} key={id}>
       <span className={status ? styles.online : styles.offline}></span>
       <img
         className={styles.avatar}
@@ -12,7 +13,7 @@ function FriendListItem({ status, name, avatar }) {
         width="48"
       />
       <p className={styles.name}>{name}</p>
-    </>
+    </li>
   );
 }
 
@@ -24,6 +25,7 @@ FriendListItem.propTypes = {
   avatar: PropTypes.string,
   name: PropTypes.string.isRequired,
   status: PropTypes.bool.isRequired,
+  id: PropTypes.number.isRequired,
 };
 
 export default FriendListItem;

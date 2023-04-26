@@ -10,3 +10,11 @@
 .typeCell {
   text-transform: capitalize;
 }
+
+.tableRow {
+  background-color: $main-background-color;
+}
+
+.tableRow:nth-of-type(2n + 1) {
+  background-color: $statistics-text-color;
+}

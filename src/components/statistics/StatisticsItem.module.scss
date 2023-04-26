@@ -8,3 +8,10 @@
 .percentage {
   font-style: 18px;
 }
+
+.item {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  color: $statistics-text-color;
+}

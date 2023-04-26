@@ -1,5 +1,23 @@
 @import "../variables.scss";
 
+
+.item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: $main-background-color;
+  border: 2px $friend-list-item-border-color solid;
+  border-radius: $border-radius;
+  padding: 25px 0;
+
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 15px;
+}
 .offline,
 .online {
   width: 20px;
