@@ -12,7 +12,7 @@ function Statistics({ title = '', stats }) {
           <StatisticsItem
             label={label}
             percentage={percentage}
-            id={id}
+            key={id}
             length={stats.length}
           />
         ))}

@@ -18,24 +18,33 @@ export default function TransactionHistory({ transactions = [] }) {
             transactionType={type}
             transactionAmount={amount}
             transactionCurrency={currency}
-            id={id}
+            key={id}
           />
         ))}
       </tbody>
     </table>
   );
 }
-
 TransactionHistory.propTypes = {
   transactions: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
       type: PropTypes.string.isRequired,
-      amount: PropTypes.number.isRequired,
+      amount: PropTypes.string.isRequired,
       currency: PropTypes.string.isRequired,
     })
-  ),
+  ).isRequired,
 };
+// TransactionHistory.propTypes = {
+//   transactions: PropTypes.arrayOf(
+//     PropTypes.shape({
+//       id: PropTypes.string.isRequired,
+//       type: PropTypes.string.isRequired,
+//       amount: PropTypes.number.isRequired,
+//       currency: PropTypes.string.isRequired,
+//     })
+//   ),
+// };
 
 // Moved the default prop declaration to the function parameters by using the default parameter syntax.
 

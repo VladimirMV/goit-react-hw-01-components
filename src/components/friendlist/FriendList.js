@@ -10,7 +10,7 @@ function FriendList({ friends }) {
           avatar={friend.avatar}
           name={friend.name}
           status={friend.isOnline}
-          id={friend.id}
+          key={friend.id}
         />
       ))}
     </ul>
